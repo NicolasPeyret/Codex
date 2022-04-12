@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codex">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update"
+            android:theme="@style/Theme.Codex.NoActionBar" />
+        <activity
             android:name=".AddActivity"
-            android:parentActivityName=".MainActivity"
+            android:exported="false"
             android:label="Add Book"
-            android:exported="false" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
