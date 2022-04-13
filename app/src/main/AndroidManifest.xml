@@ -9,21 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Codex">
-        <activity
-            android:name=".UpdateActivity"
-            android:exported="false"
-            android:label="@string/title_activity_update"
-            android:theme="@style/Theme.Codex.NoActionBar" />
+        <activity android:name=".UpdateActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".AddActivity"
-            android:exported="false"
             android:label="Add Book"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
+            android:label="Codex"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

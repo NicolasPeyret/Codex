@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.32" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.32" />
         <entry key="app/src/main/res/layout/activity_add.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18999366687777075" />
-        <entry key="app/src/main/res/layout/activity_update.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.22" />
         <entry key="app/src/main/res/layout/content_update.xml" value="0.15982776089159068" />
         <entry key="app/src/main/res/layout/my_row.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/my_menu.xml" value="0.32864583333333336" />
       </map>
     </option>
   </component>
