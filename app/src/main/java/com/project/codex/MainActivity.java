@@ -10,11 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,10 +37,22 @@ public class MainActivity extends AppCompatActivity {
     ImageView empty_imageview;
     TextView no_data;
 
+    //API Implementation
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private EditText mBookInput;
+    private TextView mAuthorText, mTitleText;
+    //ENDS HERE
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //API Implementation
+        mBookInput = (EditText) findViewById(R.id.bookInput);
+        mAuthorText = (TextView) findViewById(R.id.authorText);
+        mTitleText = (TextView) findViewById(R.id.titleText);
+        //ENDS HERE
 
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.add_button);
@@ -124,4 +139,11 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.create().show();
     }
+
+    //API Implementation
+    void searchBooks(View view) {
+        String queryString = mBookInput.getText().toString();
+        Log.i(TAG, "searched " + queryString);
+    }
+    //ENDS HERE
 }
