@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //API Implementation
-    void searchBooks(View view) {
+    public void searchBooks(View view) {
         String queryString = mBookInput.getText().toString();
         Log.i(TAG, "searched " + queryString);
         new FetchBook(mTitleText, mAuthorText).execute(queryString);
