@@ -7,9 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +20,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethod;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -142,9 +147,28 @@ public class MainActivity extends AppCompatActivity {
 
     //API Implementation
     public void searchBooks(View view) {
+
         String queryString = mBookInput.getText().toString();
-        Log.i(TAG, "searched " + queryString);
-        new FetchBook(mTitleText, mAuthorText).execute(queryString);
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
+
+        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+
+        if(networkInfo != null && networkInfo.isConnected() && queryString.length()!=0) {
+            new FetchBook(mTitleText, mAuthorText).execute(queryString);
+            mAuthorText.setText("");
+            mTitleText.setText("Loading..");
+        } else {
+            if(queryString.length() == 0) {
+                mAuthorText.setText("");
+                mTitleText.setText("Please enter a title");
+            } else {
+                mAuthorText.setText("");
+                mTitleText.setText("Please check your network");
+            }
+        }
     }
     //ENDS HERE
 }
