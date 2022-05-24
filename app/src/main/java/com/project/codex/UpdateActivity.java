@@ -64,14 +64,14 @@ public class UpdateActivity extends AppCompatActivity {
         if (getIntent().hasExtra("id")
                 && getIntent().hasExtra("title")
                 && getIntent().hasExtra("author")
-                && getIntent().hasExtra("img")
+                && getIntent().hasExtra("image")
                 && getIntent().hasExtra("pages")
         ) {
             //GET
             id = getIntent().getStringExtra("id");
             title = getIntent().getStringExtra("title");
             author = getIntent().getStringExtra("author");
-            img = getIntent().getStringExtra("img");
+            img = getIntent().getStringExtra("image");
             pages = getIntent().getStringExtra("pages");
 
             //SET

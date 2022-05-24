@@ -45,6 +45,8 @@ public class FetchBook extends AsyncTask<String, Void, String> {
                     JSONObject jObject = new JSONObject(image);
                     //smallThumbnail
                     image = jObject.getString("smallThumbnail");
+                    //http to https
+                    image = image.replace("http", "https");
 
                     String[] authorsArray = authors.split(",");
                     //foreach loop to transform the array into a string

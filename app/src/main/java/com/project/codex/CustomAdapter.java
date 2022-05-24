@@ -20,6 +20,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 
@@ -61,12 +64,16 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.book_id_txt.setText(String.valueOf(book_id.get(position)));
         holder.book_title_txt.setText(String.valueOf(book_title.get(position)));
         holder.book_author_txt.setText(String.valueOf(book_author.get(position)));
+        Picasso.with(context)
+                .load(String.valueOf(book_img.get(position)))
+                .into(holder.book_img_txt, new Callback(){
+                    @Override
+                    public void onSuccess() {}
 
-        //val `in` = java.net.URL(imageURL).openStream();
-        //image = BitmapFactory.decodeStream(`in`);
-        //holder.book_pages_txt.setImageBitmap(String.valueOf(book_img.get(position)));
-        Bitmap ImgUrl = setAsImgUrl(String.valueOf(book_img.get(position)));
-        holder.book_img_txt.setImageBitmap(ImgUrl);
+                    @Override
+                    public void onError() {}
+                });
+
         holder.book_pages_txt.setText(String.valueOf(book_pages.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,31 +93,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public int getItemCount() {
         return book_id.size();
     }
-
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView bmImage;
-        public DownloadImageTask(ImageView bmImage) {
-            this.bmImage = bmImage;
-        }
-
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap mIcon11 = null;
-            try {
-                InputStream in = new java.net.URL(urldisplay).openStream();
-                mIcon11 = BitmapFactory.decodeStream(in);
-            } catch (Exception e) {
-                Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return mIcon11;
-        }
-
-        protected void onPostExecute(Bitmap result) {
-            bmImage.setImageBitmap(result);
-        }
-    }
-
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
