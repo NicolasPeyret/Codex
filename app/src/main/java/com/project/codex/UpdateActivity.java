@@ -15,11 +15,11 @@ import com.project.codex.databinding.ActivityUpdateBinding;
 
 public class UpdateActivity extends AppCompatActivity {
 
-    EditText title_input, author_input, pages_input;
+    EditText title_input, author_input, pages_input, img_input;
     Button update_button;
     Button delete_button;
 
-    String id, title, author, pages;
+    String id, title, author, pages, img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class UpdateActivity extends AppCompatActivity {
 
         title_input = findViewById(R.id.title_input2);
         author_input = findViewById(R.id.author_input2);
+        img_input = findViewById(R.id.img_input2);
         pages_input = findViewById(R.id.pages_input2);
 
         update_button = findViewById(R.id.update_button);
@@ -45,8 +46,9 @@ public class UpdateActivity extends AppCompatActivity {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
                 title=title_input.getText().toString().trim();
                 author=author_input.getText().toString().trim();
+                img=img_input.getText().toString().trim();
                 pages=pages_input.getText().toString().trim();
-                myDB.updateData(id, title, author, pages);
+                myDB.updateData(id, title, author, img, pages);
                 finish();
             }
         });
@@ -62,17 +64,20 @@ public class UpdateActivity extends AppCompatActivity {
         if (getIntent().hasExtra("id")
                 && getIntent().hasExtra("title")
                 && getIntent().hasExtra("author")
+                && getIntent().hasExtra("img")
                 && getIntent().hasExtra("pages")
         ) {
             //GET
             id = getIntent().getStringExtra("id");
             title = getIntent().getStringExtra("title");
             author = getIntent().getStringExtra("author");
+            img = getIntent().getStringExtra("img");
             pages = getIntent().getStringExtra("pages");
 
             //SET
             title_input.setText(title);
             author_input.setText(author);
+            img_input.setText(img);
             pages_input.setText(pages);
 
         } else {

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton add_button;
 
     MyDatabaseHelper myDB;
-    ArrayList<String> book_id, book_title, book_author, book_pages;
+    ArrayList<String> book_id, book_title, book_author, book_pages, book_img;
     CustomAdapter customAdapter;
     ImageView empty_imageview;
     TextView no_data;
@@ -53,10 +53,11 @@ public class MainActivity extends AppCompatActivity {
         book_id = new ArrayList<>();
         book_title = new ArrayList<>();
         book_author = new ArrayList<>();
+        book_img = new ArrayList<>();
         book_pages = new ArrayList<>();
 
         storeDataInArrays();
-        customAdapter = new CustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_pages);
+        customAdapter = new CustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_img, book_pages);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
@@ -79,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
                 book_id.add(cursor.getString(0));
                 book_title.add(cursor.getString(1));
                 book_author.add(cursor.getString(2));
-                book_pages.add(cursor.getString(3));
+                book_img.add(cursor.getString(3));
+                book_pages.add(cursor.getString(4));
             }
             empty_imageview.setVisibility(View.GONE);
             no_data.setVisibility(View.GONE);

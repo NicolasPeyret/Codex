@@ -8,11 +8,12 @@ import org.json.JSONObject;
 
 public class FetchBook extends AsyncTask<String, Void, String> {
 
-    private TextView mAuthorText, mTitleText, mPageNumberText;
+    private TextView mAuthorText, mTitleText, mPageNumberText, mImgText;
 
-    public FetchBook(TextView mTitleText, TextView mAuthorText, TextView mPageNumberText) {
+    public FetchBook(TextView mTitleText, TextView mAuthorText, TextView mImgText, TextView mPageNumberText) {
         this.mTitleText = mTitleText;
         this.mAuthorText = mAuthorText;
+        this.mImgText = mImgText;
         this.mPageNumberText = mPageNumberText;
     }
 
@@ -33,16 +34,18 @@ public class FetchBook extends AsyncTask<String, Void, String> {
                 String title = null;
                 String authors = null;
                 String pageNumber = null;
-                //String image = null;
+                String image = null;
                 JSONObject volumeInfo = book.getJSONObject("volumeInfo");
-
                 try {
                     title = volumeInfo.getString("title");
                     authors = volumeInfo.getString("authors");
                     authors = authors.substring(1, authors.length()-1);
                     //get substring of image named smallThumbnail
-                    //image = volumeInfo.getString("imageLinks");
+                    image = volumeInfo.getString("imageLinks");
+                    JSONObject jObject = new JSONObject(image);
                     //smallThumbnail
+                    image = jObject.getString("smallThumbnail");
+
                     String[] authorsArray = authors.split(",");
                     //foreach loop to transform the array into a string
                     StringBuilder sb = new StringBuilder();
@@ -60,6 +63,7 @@ public class FetchBook extends AsyncTask<String, Void, String> {
                 if (title != null && authors != null && pageNumber != null) {
                     mTitleText.setText(title);
                     mAuthorText.setText(authors);
+                    mImgText.setText(image);
                     mPageNumberText.setText(pageNumber);
                     return;
                 }
@@ -67,11 +71,13 @@ public class FetchBook extends AsyncTask<String, Void, String> {
 
             mTitleText.setText("No results found");
             mAuthorText.setText("");
+            mImgText.setText("");
             mPageNumberText.setText("");
 
         } catch (Exception e) {
             mTitleText.setText("No results found");
             mAuthorText.setText("");
+            mImgText.setText("");
             mPageNumberText.setText("");
             e.printStackTrace();
         }

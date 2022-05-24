@@ -18,6 +18,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_TITLE = "book_title";
     private static final String COLUMN_AUTHOR = "book_author";
+    private static final String COLUMN_IMG = "book_img";
     private static final String COLUMN_PAGES = "book_pages";
 
 
@@ -38,6 +39,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                         + " TEXT, "
                         + COLUMN_AUTHOR
                         + " TEXT, "
+                        + COLUMN_IMG
+                        + " TEXT, "
                         + COLUMN_PAGES
                         + " INTEGER);";
         db.execSQL(query);
@@ -49,12 +52,13 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void addBook(String title, String author, int pages) {
+    void addBook(String title, String author, String img, int pages) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
         cv.put(COLUMN_TITLE,title);
         cv.put(COLUMN_AUTHOR,author);
+        cv.put(COLUMN_IMG,img);
         cv.put(COLUMN_PAGES,pages);
 
         long result = db.insert(TABLE_NAME, null, cv);
@@ -76,11 +80,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    void updateData(String row_id, String title, String author, String pages) {
+    void updateData(String row_id, String title, String author, String img, String pages) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(COLUMN_TITLE, title);
         cv.put(COLUMN_AUTHOR, author);
+        cv.put(COLUMN_IMG,img);
         cv.put(COLUMN_PAGES, pages);
         long result = db.update(TABLE_NAME, cv, "_id=?", new String[]{row_id});
         if(result == -1) {

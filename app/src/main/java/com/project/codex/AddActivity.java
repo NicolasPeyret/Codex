@@ -20,13 +20,13 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class AddActivity extends AppCompatActivity {
 
     FloatingActionButton scan_button;
-    EditText title_input, author_input, pages_input;
+    EditText title_input, author_input, pages_input, img_input;
     Button add_button;
 
     //API Implementation
     private static final String TAG = AddActivity.class.getSimpleName();
     private EditText mBookInput;
-    private TextView mAuthorText, mTitleText, mPageNumberText;
+    private TextView mAuthorText, mTitleText, mPageNumberText, mImgText;
     //ENDS HERE
 
     @Override
@@ -38,11 +38,13 @@ public class AddActivity extends AppCompatActivity {
         mBookInput = (EditText) findViewById(R.id.bookInput);
         mAuthorText = findViewById(R.id.author_input);
         mTitleText = findViewById(R.id.title_input);
+        mImgText = findViewById(R.id.img_input);
         mPageNumberText = findViewById(R.id.pages_input);
         //ENDS HERE
 
         title_input = findViewById(R.id.title_input);
         author_input = findViewById(R.id.author_input);
+        img_input = findViewById(R.id.img_input);
         pages_input = findViewById(R.id.pages_input);
         add_button = findViewById(R.id.add_button);
         scan_button = findViewById(R.id.scanButton);
@@ -60,6 +62,7 @@ public class AddActivity extends AppCompatActivity {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
                 myDB.addBook(title_input.getText().toString().trim(),
                         author_input.getText().toString().trim(),
+                        img_input.getText().toString().trim(),
                         Integer.valueOf(pages_input.getText().toString().trim())
                 );
                 //finish();
@@ -78,18 +81,21 @@ public class AddActivity extends AppCompatActivity {
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         if(networkInfo != null && networkInfo.isConnected() && queryString.length()!=0) {
-            new FetchBook(mTitleText, mAuthorText, mPageNumberText).execute(queryString);
+            new FetchBook(mTitleText, mAuthorText, mImgText, mPageNumberText).execute(queryString);
             mAuthorText.setText("");
             mPageNumberText.setText("");
+            mImgText.setText("");
             mTitleText.setText("Loading..");
         } else {
             if(queryString.length() == 0) {
                 mAuthorText.setText("");
                 mPageNumberText.setText("");
+                mImgText.setText("");
                 mTitleText.setText("Please enter a title");
             } else {
                 mAuthorText.setText("");
                 mPageNumberText.setText("");
+                mImgText.setText("");
                 mTitleText.setText("Please check your network");
             }
         }
@@ -106,7 +112,7 @@ public class AddActivity extends AppCompatActivity {
                         "book imported",
                         Toast.LENGTH_SHORT).show();
                 String queryString = data.getExtras().getString("decodedBarcode");
-                new FetchBook(mTitleText, mAuthorText, mPageNumberText).execute(queryString);
+                new FetchBook(mTitleText, mAuthorText, mImgText, mPageNumberText).execute(queryString);
 
             }
         }
