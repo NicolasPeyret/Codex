@@ -4,12 +4,20 @@
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_scanner.xml"
     },
     {
+        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_books_row.xml",
+        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/my_books_row.xml"
+    },
+    {
         "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update.xml",
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_update.xml"
     },
     {
         "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_book.xml",
+        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_add_book.xml"
     },
     {
         "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_note.xml",
@@ -28,8 +36,8 @@
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/content_update.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add.xml",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_add.xml"
+        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_book.xml",
+        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_update_book.xml"
     },
     {
         "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_row.xml",

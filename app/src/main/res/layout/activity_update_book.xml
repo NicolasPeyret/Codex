@@ -8,18 +8,32 @@
     android:padding="30dp"
     >
 
+    <ImageView
+        android:id="@+id/book_img_2"
+        android:layout_width="79dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="5dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <EditText
         android:id="@+id/title_input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Book Title"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_img_2"
+        tools:layout_editor_absoluteX="30dp" />
+    app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

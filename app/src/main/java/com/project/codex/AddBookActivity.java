@@ -17,14 +17,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class AddActivity extends AppCompatActivity {
+public class AddBookActivity extends AppCompatActivity {
 
     FloatingActionButton scan_button;
     EditText title_input, author_input, pages_input, img_input;
     Button add_button;
 
     //API Implementation
-    private static final String TAG = AddActivity.class.getSimpleName();
+    private static final String TAG = AddBookActivity.class.getSimpleName();
     private EditText mBookInput;
     private TextView mAuthorText, mTitleText, mPageNumberText, mImgText;
     //ENDS HERE
@@ -32,10 +32,10 @@ public class AddActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_add_book);
 
         //API Implementation
-        mBookInput = (EditText) findViewById(R.id.bookInput);
+        mBookInput = findViewById(R.id.bookInput);
         mAuthorText = findViewById(R.id.author_input);
         mTitleText = findViewById(R.id.title_input);
         mImgText = findViewById(R.id.img_input);
@@ -51,7 +51,7 @@ public class AddActivity extends AppCompatActivity {
         scan_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddActivity.this, ScannerActivity.class);
+                Intent intent = new Intent(AddBookActivity.this, ScannerActivity.class);
                 int LAUNCH_SECOND_ACTIVITY = 1;
                 startActivityForResult(intent, LAUNCH_SECOND_ACTIVITY);
             }
@@ -59,7 +59,7 @@ public class AddActivity extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(AddBookActivity.this);
                 myDB.addBook(title_input.getText().toString().trim(),
                         author_input.getText().toString().trim(),
                         img_input.getText().toString().trim(),
@@ -101,7 +101,6 @@ public class AddActivity extends AppCompatActivity {
         }
     }
     //ENDS HERE
-
     @SuppressLint("MissingSuperCall")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

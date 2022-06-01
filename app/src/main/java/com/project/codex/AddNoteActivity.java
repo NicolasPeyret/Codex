@@ -16,28 +16,29 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.raodevs.touchdraw.TouchDrawView;
 
-public class AddActivityNote extends AppCompatActivity {
+public class AddNoteActivity extends AppCompatActivity {
 
     EditText title_input, page_input, book_id_input, content_input;
     Button add_button;
+    //TouchDrawView touchDrawView; //declaring
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
-
         title_input = findViewById(R.id.title_input);
         page_input = findViewById(R.id.page_input);
         book_id_input = findViewById(R.id.book_id_input);
         content_input = findViewById(R.id.content_input);
-
+        //touchDrawView = findViewById(R.id.canvas);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivityNote.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(AddNoteActivity.this);
                 myDB.addNote(
                         Integer.valueOf(book_id_input.getText().toString().trim()),
                         title_input.getText().toString().trim(),
@@ -47,6 +48,7 @@ public class AddActivityNote extends AppCompatActivity {
                 //finish();
             }
         });
-    }
 
+
+    }
 }

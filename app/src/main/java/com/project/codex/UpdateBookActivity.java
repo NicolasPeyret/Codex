@@ -1,24 +1,26 @@
 package com.project.codex;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.ui.AppBarConfiguration;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.project.codex.databinding.ActivityUpdateBinding;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 
-public class UpdateActivity extends AppCompatActivity {
+public class UpdateBookActivity extends AppCompatActivity {
 
     EditText title_input, author_input, pages_input, img_input;
+    ImageView book_img_view;
+
     Button update_button;
     FloatingActionButton add_button;
     Button delete_button;
@@ -28,8 +30,9 @@ public class UpdateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update);
+        setContentView(R.layout.activity_update_book);
 
+        book_img_view = findViewById(R.id.book_img_2);
         title_input = findViewById(R.id.title_input2);
         add_button = findViewById(R.id.add_button_note);
         author_input = findViewById(R.id.author_input2);
@@ -38,7 +41,7 @@ public class UpdateActivity extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UpdateActivity.this, AddActivityNote.class);
+                Intent intent = new Intent(UpdateBookActivity.this, AddNoteActivity.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +57,7 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateBookActivity.this);
                 title=title_input.getText().toString().trim();
                 author=author_input.getText().toString().trim();
                 img=img_input.getText().toString().trim();
@@ -90,6 +93,15 @@ public class UpdateActivity extends AppCompatActivity {
             author_input.setText(author);
             img_input.setText(img);
             pages_input.setText(pages);
+            Picasso.with(this)
+                    .load(String.valueOf(img))
+                    .into(book_img_view, new Callback(){
+                        @Override
+                        public void onSuccess() {}
+
+                        @Override
+                        public void onError() {}
+                    });
 
         } else {
             Toast.makeText(this, "No Data", Toast.LENGTH_SHORT).show();
@@ -103,7 +115,7 @@ public class UpdateActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateBookActivity.this);
                 myDB.deleteOneRow("books", id);
                 finish();
             }

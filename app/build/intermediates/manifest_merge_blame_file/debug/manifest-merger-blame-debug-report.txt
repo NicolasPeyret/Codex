@@ -27,111 +27,116 @@
 17        android:required="false" />
 17-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:9:9-33
 18
-19    <application
-19-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:10:5-42:19
-20        android:allowBackup="true"
-20-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:11:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.7.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/b9e4376e452ce4f1a2bbb1fc4b534124/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-22        android:debuggable="true"
-23        android:icon="@mipmap/ic_launcher"
-23-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:12:9-43
-24        android:label="@string/app_name"
-24-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:13:9-41
-25        android:roundIcon="@mipmap/ic_launcher_round"
-25-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:14:9-54
-26        android:supportsRtl="true"
-26-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:15:9-35
-27        android:testOnly="true"
-28        android:theme="@style/Theme.Codex" >
-28-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:16:9-43
-29        <activity
-29-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:17:9-18:57
-30            android:name="com.project.codex.UpdateActivity"
-30-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:17:19-49
-31            android:parentActivityName="com.project.codex.MainActivity" />
-31-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:18:13-55
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->[com.github.gauravyadav673:HandDraw:v1.02] /Users/nicolaspeyret/.gradle/caches/transforms-3/3d809b60f6df8a9c0ef462c3dc2ac2a4/transformed/jetified-HandDraw-v1.02/AndroidManifest.xml:11:5-81
+19-->[com.github.gauravyadav673:HandDraw:v1.02] /Users/nicolaspeyret/.gradle/caches/transforms-3/3d809b60f6df8a9c0ef462c3dc2ac2a4/transformed/jetified-HandDraw-v1.02/AndroidManifest.xml:11:22-78
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21
+22    <application
+22-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:10:5-42:19
+23        android:allowBackup="true"
+23-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.7.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/b9e4376e452ce4f1a2bbb1fc4b534124/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:12:9-43
+27        android:label="@string/app_name"
+27-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:13:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:14:9-54
+29        android:supportsRtl="true"
+29-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:15:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.Codex" >
+31-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:16:9-43
 32        <activity
-32-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:19:9-22:58
-33            android:name="com.project.codex.AddActivity"
-33-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:20:13-40
-34            android:label="Add Book"
-34-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:21:13-37
-35            android:parentActivityName="com.project.codex.MainActivity" />
-35-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:22:13-55
-36        <activity
-36-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:23:9-26:57
-37            android:name="com.project.codex.ScannerActivity"
-37-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:24:13-44
-38            android:label="Scan a BarCode"
-38-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:25:13-43
-39            android:parentActivityName="com.project.codex.AddActivity" />
-39-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:26:13-54
-40        <activity
-40-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:27:9-30:60
-41            android:name="com.project.codex.AddActivityNote"
-41-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:28:13-44
-42            android:label="Add a note"
-42-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:29:13-39
-43            android:parentActivityName="com.project.codex.UpdateActivity" />
-43-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:30:13-57
-44        <activity
-44-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:31:9-41:20
-45            android:name="com.project.codex.MainActivity"
-45-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:32:13-41
-46            android:exported="true"
-46-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:34:13-36
-47            android:label="Codex" >
-47-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:33:13-34
-48            <intent-filter>
-48-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:35:13-40:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:36:17-69
-49-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:36:25-66
-50                <action android:name="android.intent.action.VIEW" />
-50-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:37:17-69
-50-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:37:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:39:17-77
-52-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:39:27-74
-53            </intent-filter>
-54        </activity>
-55
-56        <provider
-56-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-57            android:name="androidx.startup.InitializationProvider"
-57-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-58            android:authorities="com.project.codex.androidx-startup"
-58-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-59            android:exported="false" >
-59-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-60            <meta-data
-60-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-61-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-62                android:value="androidx.startup" />
-62-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/2c96a293c0a835e94af1ddc4d74ff22d/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+32-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:17:9-18:57
+33            android:name="com.project.codex.UpdateBookActivity"
+33-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:17:19-53
+34            android:parentActivityName="com.project.codex.MainActivity" />
+34-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:18:13-55
+35        <activity
+35-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:19:9-22:58
+36            android:name="com.project.codex.AddBookActivity"
+36-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:20:13-44
+37            android:label="Add Book"
+37-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:21:13-37
+38            android:parentActivityName="com.project.codex.MainActivity" />
+38-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:22:13-55
+39        <activity
+39-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:23:9-26:61
+40            android:name="com.project.codex.ScannerActivity"
+40-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:24:13-44
+41            android:label="Scan a BarCode"
+41-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:25:13-43
+42            android:parentActivityName="com.project.codex.AddBookActivity" />
+42-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:26:13-58
+43        <activity
+43-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:27:9-30:64
+44            android:name="com.project.codex.AddNoteActivity"
+44-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:28:13-44
+45            android:label="Add a note"
+45-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:29:13-39
+46            android:parentActivityName="com.project.codex.UpdateBookActivity" />
+46-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:30:13-61
+47        <activity
+47-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:31:9-41:20
+48            android:name="com.project.codex.MainActivity"
+48-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:32:13-41
+49            android:exported="true"
+49-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:34:13-36
+50            android:label="Codex" >
+50-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:33:13-34
+51            <intent-filter>
+51-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:35:13-40:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:36:17-69
+52-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:36:25-66
+53                <action android:name="android.intent.action.VIEW" />
+53-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:37:17-69
+53-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:37:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:39:17-77
+55-->/Volumes/projetsPERSO/Codex/app/src/main/AndroidManifest.xml:39:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+61            android:authorities="com.project.codex.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
 63            <meta-data
-63-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/bdba8a1b7f77d959878d5a52670cf96f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-64-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/bdba8a1b7f77d959878d5a52670cf96f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+63-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
 65                android:value="androidx.startup" />
-65-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/bdba8a1b7f77d959878d5a52670cf96f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-66        </provider>
-67
-68        <uses-library
-68-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-69            android:name="androidx.window.extensions"
-69-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-70            android:required="false" />
-70-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+65-->[androidx.emoji2:emoji2:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4d40ec21232b611dd716b892ede208d6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/b5a10263a72c0b80aefb6f8f76c83ace/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/b5a10263a72c0b80aefb6f8f76c83ace/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/b5a10263a72c0b80aefb6f8f76c83ace/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+69        </provider>
+70
 71        <uses-library
-71-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-72            android:name="androidx.window.sidecar"
-72-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+71-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
 73            android:required="false" />
-73-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/194105470fda0354aaff7bde4c998be5/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-74    </application>
-75
-76</manifest>
+73-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0] /Users/nicolaspeyret/.gradle/caches/transforms-3/4b67f92faa216683b9d05df11a75a1dd/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+77    </application>
+78
+79</manifest>

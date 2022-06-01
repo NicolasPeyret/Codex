@@ -14,20 +14,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Codex">
-        <activity android:name=".UpdateActivity"
+        <activity android:name=".UpdateBookActivity"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".AddActivity"
+            android:name=".AddBookActivity"
             android:label="Add Book"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ScannerActivity"
             android:label="Scan a BarCode"
-            android:parentActivityName=".AddActivity" />
+            android:parentActivityName=".AddBookActivity" />
         <activity
-            android:name=".AddActivityNote"
+            android:name=".AddNoteActivity"
             android:label="Add a note"
-            android:parentActivityName=".UpdateActivity" />
+            android:parentActivityName=".UpdateBookActivity" />
         <activity
             android:name=".MainActivity"
             android:label="Codex"

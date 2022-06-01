@@ -175,6 +175,7 @@ attr behavior_overlapTop
 attr behavior_peekHeight
 attr behavior_saveFlags
 attr behavior_skipCollapsed
+attr bg_color
 attr blendSrc
 attr borderRound
 attr borderRoundPercent
@@ -863,6 +864,8 @@ attr paddingRightSystemWindowInsets
 attr paddingStart
 attr paddingTopNoTitle
 attr paddingTopSystemWindowInsets
+attr paint_color
+attr paint_width
 attr panelBackground
 attr panelMenuListTheme
 attr panelMenuListWidth
@@ -2679,7 +2682,9 @@ id bestChoice
 id blocking
 id bookInput
 id book_author_txt
+id book_id_input
 id book_id_txt
+id book_img_2
 id book_img_txt
 id book_pages_txt
 id book_title_txt
@@ -2694,6 +2699,7 @@ id button_second
 id cache_measures
 id callMeasure
 id cancel_button
+id canvas
 id carryVelocity
 id center
 id center_horizontal
@@ -2806,7 +2812,6 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
-id id_input
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3187,11 +3192,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_add
+layout activity_add_book
 layout activity_add_note
 layout activity_main
 layout activity_scanner
-layout activity_update
+layout activity_update_book
 layout content_update
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3257,7 +3262,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
-layout my_row
+layout my_books_row
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -4482,6 +4487,7 @@ styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMod
 styleable BottomNavigationView android_minHeight itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
 styleable ButtonBarLayout allowStacking
+styleable Canvas bg_color paint_color paint_width
 styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold

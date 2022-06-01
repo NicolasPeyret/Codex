@@ -16,6 +16,9 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,20 +30,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.Codex" >
         <activity
-            android:name="com.project.codex.UpdateActivity"
+            android:name="com.project.codex.UpdateBookActivity"
             android:parentActivityName="com.project.codex.MainActivity" />
         <activity
-            android:name="com.project.codex.AddActivity"
+            android:name="com.project.codex.AddBookActivity"
             android:label="Add Book"
             android:parentActivityName="com.project.codex.MainActivity" />
         <activity
             android:name="com.project.codex.ScannerActivity"
             android:label="Scan a BarCode"
-            android:parentActivityName="com.project.codex.AddActivity" />
+            android:parentActivityName="com.project.codex.AddBookActivity" />
         <activity
-            android:name="com.project.codex.AddActivityNote"
+            android:name="com.project.codex.AddNoteActivity"
             android:label="Add a note"
-            android:parentActivityName="com.project.codex.UpdateActivity" />
+            android:parentActivityName="com.project.codex.UpdateBookActivity" />
         <activity
             android:name="com.project.codex.MainActivity"
             android:exported="true"
