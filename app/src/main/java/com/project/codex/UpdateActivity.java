@@ -1,6 +1,7 @@
 package com.project.codex;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,12 +12,15 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.codex.databinding.ActivityUpdateBinding;
 
 public class UpdateActivity extends AppCompatActivity {
 
     EditText title_input, author_input, pages_input, img_input;
     Button update_button;
+    FloatingActionButton add_button;
     Button delete_button;
 
     String id, title, author, pages, img;
@@ -27,10 +31,17 @@ public class UpdateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update);
 
         title_input = findViewById(R.id.title_input2);
+        add_button = findViewById(R.id.add_button_note);
         author_input = findViewById(R.id.author_input2);
         img_input = findViewById(R.id.img_input2);
         pages_input = findViewById(R.id.pages_input2);
-
+        add_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UpdateActivity.this, AddActivityNote.class);
+                startActivity(intent);
+            }
+        });
         update_button = findViewById(R.id.update_button);
         delete_button = findViewById(R.id.delete_button);
 
@@ -48,7 +59,7 @@ public class UpdateActivity extends AppCompatActivity {
                 author=author_input.getText().toString().trim();
                 img=img_input.getText().toString().trim();
                 pages=pages_input.getText().toString().trim();
-                myDB.updateData(id, title, author, img, pages);
+                myDB.updateBook(id, title, author, img, pages);
                 finish();
             }
         });
@@ -93,7 +104,7 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
-                myDB.deleteOneRow(id);
+                myDB.deleteOneRow("books", id);
                 finish();
             }
         });

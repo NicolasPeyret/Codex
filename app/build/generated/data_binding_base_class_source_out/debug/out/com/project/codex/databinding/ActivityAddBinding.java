@@ -35,6 +35,9 @@ public final class ActivityAddBinding implements ViewBinding {
   public final EditText bookInput;
 
   @NonNull
+  public final EditText imgInput;
+
+  @NonNull
   public final TextView instructions;
 
   @NonNull
@@ -57,7 +60,7 @@ public final class ActivityAddBinding implements ViewBinding {
 
   private ActivityAddBinding(@NonNull ConstraintLayout rootView, @NonNull Button addButton,
       @NonNull EditText authorInput, @NonNull TextView authorText, @NonNull EditText bookInput,
-      @NonNull TextView instructions, @NonNull TextView pageNumberText,
+      @NonNull EditText imgInput, @NonNull TextView instructions, @NonNull TextView pageNumberText,
       @NonNull EditText pagesInput, @NonNull FloatingActionButton scanButton,
       @NonNull Button searchButton, @NonNull EditText titleInput, @NonNull TextView titleText) {
     this.rootView = rootView;
@@ -65,6 +68,7 @@ public final class ActivityAddBinding implements ViewBinding {
     this.authorInput = authorInput;
     this.authorText = authorText;
     this.bookInput = bookInput;
+    this.imgInput = imgInput;
     this.instructions = instructions;
     this.pageNumberText = pageNumberText;
     this.pagesInput = pagesInput;
@@ -125,6 +129,12 @@ public final class ActivityAddBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.img_input;
+      EditText imgInput = ViewBindings.findChildViewById(rootView, id);
+      if (imgInput == null) {
+        break missingId;
+      }
+
       id = R.id.instructions;
       TextView instructions = ViewBindings.findChildViewById(rootView, id);
       if (instructions == null) {
@@ -168,8 +178,8 @@ public final class ActivityAddBinding implements ViewBinding {
       }
 
       return new ActivityAddBinding((ConstraintLayout) rootView, addButton, authorInput, authorText,
-          bookInput, instructions, pageNumberText, pagesInput, scanButton, searchButton, titleInput,
-          titleText);
+          bookInput, imgInput, instructions, pageNumberText, pagesInput, scanButton, searchButton,
+          titleInput, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

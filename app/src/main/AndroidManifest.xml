@@ -25,6 +25,10 @@
             android:label="Scan a BarCode"
             android:parentActivityName=".AddActivity" />
         <activity
+            android:name=".AddActivityNote"
+            android:label="Add a note"
+            android:parentActivityName=".UpdateActivity" />
+        <activity
             android:name=".MainActivity"
             android:label="Codex"
             android:exported="true">

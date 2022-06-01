@@ -27,7 +27,7 @@ public final class MyRowBinding implements ViewBinding {
   public final TextView bookIdTxt;
 
   @NonNull
-  public final ImageView bookImage;
+  public final ImageView bookImgTxt;
 
   @NonNull
   public final TextView bookPagesTxt;
@@ -39,12 +39,12 @@ public final class MyRowBinding implements ViewBinding {
   public final LinearLayout mainLayout;
 
   private MyRowBinding(@NonNull LinearLayout rootView, @NonNull TextView bookAuthorTxt,
-      @NonNull TextView bookIdTxt, @NonNull ImageView bookImage, @NonNull TextView bookPagesTxt,
+      @NonNull TextView bookIdTxt, @NonNull ImageView bookImgTxt, @NonNull TextView bookPagesTxt,
       @NonNull TextView bookTitleTxt, @NonNull LinearLayout mainLayout) {
     this.rootView = rootView;
     this.bookAuthorTxt = bookAuthorTxt;
     this.bookIdTxt = bookIdTxt;
-    this.bookImage = bookImage;
+    this.bookImgTxt = bookImgTxt;
     this.bookPagesTxt = bookPagesTxt;
     this.bookTitleTxt = bookTitleTxt;
     this.mainLayout = mainLayout;
@@ -89,9 +89,9 @@ public final class MyRowBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.book_image;
-      ImageView bookImage = ViewBindings.findChildViewById(rootView, id);
-      if (bookImage == null) {
+      id = R.id.book_img_txt;
+      ImageView bookImgTxt = ViewBindings.findChildViewById(rootView, id);
+      if (bookImgTxt == null) {
         break missingId;
       }
 
@@ -109,7 +109,7 @@ public final class MyRowBinding implements ViewBinding {
 
       LinearLayout mainLayout = (LinearLayout) rootView;
 
-      return new MyRowBinding((LinearLayout) rootView, bookAuthorTxt, bookIdTxt, bookImage,
+      return new MyRowBinding((LinearLayout) rootView, bookAuthorTxt, bookIdTxt, bookImgTxt,
           bookPagesTxt, bookTitleTxt, mainLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);

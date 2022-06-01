@@ -2650,6 +2650,7 @@ id actions
 id activity_chooser_view_content
 id add
 id add_button
+id add_button_note
 id alertTitle
 id aligned
 id all
@@ -2679,7 +2680,7 @@ id blocking
 id bookInput
 id book_author_txt
 id book_id_txt
-id book_image
+id book_img_txt
 id book_pages_txt
 id book_title_txt
 id bottom
@@ -2721,6 +2722,7 @@ id constraint
 id container
 id content
 id contentPanel
+id content_input
 id contiguous
 id continuousVelocity
 id coordinator
@@ -2804,10 +2806,13 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+id id_input
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+id img_input
+id img_input2
 id immediateStop
 id included
 id info
@@ -2922,6 +2927,7 @@ id outward
 id overshoot
 id packed
 id pageNumberText
+id page_input
 id pages_input
 id pages_input2
 id parallax
@@ -3182,6 +3188,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add
+layout activity_add_note
 layout activity_main
 layout activity_scanner
 layout activity_update
