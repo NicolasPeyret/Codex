@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     MyDatabaseHelper myDB;
     ArrayList<String> book_id, book_title, book_author, book_pages, book_img;
-    CustomAdapter customAdapter;
+    BookCustomAdapter bookCustomAdapter;
     ImageView empty_imageview;
     TextView no_data;
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.bookRecyclerView);
         add_button = findViewById(R.id.add_button);
         empty_imageview = findViewById(R.id.empty_imageview);
         no_data = findViewById(R.id.no_data);
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         book_pages = new ArrayList<>();
 
         storeDataInArrays();
-        customAdapter = new CustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_img, book_pages);
-        recyclerView.setAdapter(customAdapter);
+        bookCustomAdapter = new BookCustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_img, book_pages);
+        recyclerView.setAdapter(bookCustomAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 

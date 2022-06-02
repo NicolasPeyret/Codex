@@ -21,7 +21,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.MyViewHolder> {
 
     Context context;
     Activity activity;
@@ -30,13 +30,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     Animation translate_anim;
 
-    CustomAdapter(Activity activity,
-                  Context context,
-                  ArrayList book_id,
-                  ArrayList book_title,
-                  ArrayList book_author,
-                  ArrayList book_img,
-                  ArrayList book_pages) {
+    BookCustomAdapter(Activity activity,
+                      Context context,
+                      ArrayList book_id,
+                      ArrayList book_title,
+                      ArrayList book_author,
+                      ArrayList book_img,
+                      ArrayList book_pages) {
         this.activity = activity;
         this.context = context;
         this.book_id = book_id;

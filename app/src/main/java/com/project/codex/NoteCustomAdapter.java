@@ -21,64 +21,51 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.MyViewHolder> {
+public class NoteCustomAdapter extends RecyclerView.Adapter<NoteCustomAdapter.MyViewHolder> {
 
     Context context;
     Activity activity;
 
-    private ArrayList book_id, book_title, book_author, book_img, book_pages;
+    private ArrayList note_id, note_title, note_content, book_page;
 
     Animation translate_anim;
 
-    BookCustomAdapter(Activity activity,
+    NoteCustomAdapter(Activity activity,
                       Context context,
-                      ArrayList book_id,
-                      ArrayList book_title,
-                      ArrayList book_author,
-                      ArrayList book_img,
-                      ArrayList book_pages) {
+                      ArrayList note_id,
+                      ArrayList note_title,
+                      ArrayList note_content,
+                      ArrayList book_page) {
         this.activity = activity;
         this.context = context;
-        this.book_id = book_id;
-        this.book_title = book_title;
-        this.book_author = book_author;
-        this.book_img = book_img;
-        this.book_pages = book_pages;
+        this.note_id = note_id;
+        this.note_title = note_title;
+        this.note_content = note_content;
+        this.book_page = book_page;
     }
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_books_row, parent, false);
+        View view = inflater.inflate(R.layout.my_notes_row, parent, false);
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
-        holder.book_id_txt.setText(String.valueOf(book_id.get(position)));
-        holder.book_title_txt.setText(String.valueOf(book_title.get(position)));
-        holder.book_author_txt.setText(String.valueOf(book_author.get(position)));
-        Picasso.with(context)
-                .load(String.valueOf(book_img.get(position)))
-                .into(holder.book_img_txt, new Callback(){
-                    @Override
-                    public void onSuccess() {}
-
-                    @Override
-                    public void onError() {}
-                });
-
-        holder.book_pages_txt.setText(String.valueOf(book_pages.get(position)));
+        holder.note_id_txt.setText(String.valueOf(note_id.get(position)));
+        holder.note_title_txt.setText(String.valueOf(note_title.get(position)));
+        holder.note_content_txt.setText(String.valueOf(note_content.get(position)));
+        holder.book_page_txt.setText(String.valueOf(book_page.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, UpdateBookActivity.class);
-                intent.putExtra("id", String.valueOf(book_id.get(position)));
-                intent.putExtra("title", String.valueOf(book_title.get(position)));
-                intent.putExtra("author", String.valueOf(book_author.get(position)));
-                intent.putExtra("image", String.valueOf(book_img.get(position)));
-                intent.putExtra("pages", String.valueOf(book_pages.get(position)));
+                intent.putExtra("id", String.valueOf(note_id.get(position)));
+                intent.putExtra("title", String.valueOf(note_title.get(position)));
+                intent.putExtra("content", String.valueOf(note_content.get(position)));
+                intent.putExtra("page", String.valueOf(book_page.get(position)));
                 activity.startActivityForResult(intent, 1);
             }
         });
@@ -86,22 +73,20 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
 
     @Override
     public int getItemCount() {
-        return book_id.size();
+        return note_id.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView book_id_txt, book_title_txt, book_author_txt, book_pages_txt;
-        ImageView book_img_txt;
+        TextView note_id_txt, note_title_txt, note_content_txt, book_page_txt;
         LinearLayout mainLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            book_id_txt = itemView.findViewById(R.id.book_id_txt);
-            book_title_txt = itemView.findViewById(R.id.book_title_txt);
-            book_author_txt = itemView.findViewById(R.id.book_author_txt);
-            book_img_txt = itemView.findViewById(R.id.book_img_txt);
-            book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
+            note_id_txt = itemView.findViewById(R.id.note_id_txt);
+            note_title_txt = itemView.findViewById(R.id.note_title_txt);
+            note_content_txt = itemView.findViewById(R.id.note_content_txt);
+            book_page_txt = itemView.findViewById(R.id.note_page_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
             translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
             mainLayout.setAnimation(translate_anim);

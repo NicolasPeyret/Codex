@@ -72,6 +72,10 @@
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_update_book.xml"
     },
     {
+        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_my_notes_row.xml.flat",
+        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/my_notes_row.xml"
+    },
+    {
         "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
     },

@@ -1,6 +1,7 @@
 package com.project.codex;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,15 +12,24 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+
 public class UpdateBookActivity extends AppCompatActivity {
 
     EditText title_input, author_input, pages_input, img_input;
     ImageView book_img_view;
+
+    MyDatabaseHelper myDB;
+    RecyclerView recyclerView;
+    ArrayList<String> note_id, note_title, note_content, book_page;
+    NoteCustomAdapter noteCustomAdapter;
 
     Button update_button;
     FloatingActionButton add_button;
@@ -31,6 +41,19 @@ public class UpdateBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_book);
+
+        recyclerView = findViewById(R.id.noteRecyclerView);
+        myDB = new MyDatabaseHelper(UpdateBookActivity.this);
+        note_id = new ArrayList<>();
+        note_title = new ArrayList<>();
+        note_content = new ArrayList<>();
+        book_page = new ArrayList<>();
+
+        storeDataInArrays();
+
+        noteCustomAdapter = new NoteCustomAdapter(UpdateBookActivity.this, this, note_id, note_title, note_content, book_page);
+        recyclerView.setAdapter(noteCustomAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(UpdateBookActivity.this));
 
         book_img_view = findViewById(R.id.book_img_2);
         title_input = findViewById(R.id.title_input2);
@@ -128,4 +151,16 @@ public class UpdateBookActivity extends AppCompatActivity {
         });
         builder.create().show();
     }
+
+    void storeDataInArrays() {
+        Cursor cursor = myDB.readNotesByBookId(1);
+
+            while(cursor.moveToNext()) {
+                note_id.add(cursor.getString(0));
+                note_title.add(cursor.getString(1));
+                note_content.add(cursor.getString(2));
+                book_page.add(cursor.getString(3));
+            }
+    }
+
 }

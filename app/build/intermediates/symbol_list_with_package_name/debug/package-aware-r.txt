@@ -2681,6 +2681,7 @@ id beginning
 id bestChoice
 id blocking
 id bookInput
+id bookRecyclerView
 id book_author_txt
 id book_id_input
 id book_id_txt
@@ -2921,6 +2922,11 @@ id no_data
 id none
 id normal
 id north
+id noteRecyclerView
+id note_content_txt
+id note_id_txt
+id note_page_txt
+id note_title_txt
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -2953,7 +2959,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3263,6 +3268,7 @@ layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout my_books_row
+layout my_notes_row
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

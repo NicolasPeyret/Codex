@@ -27,7 +27,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_TITLE_2 = "note_title";
     private static final String COLUMN_CONTENT_2 = "note_content";
     private static final String COLUMN_PAGE_2 = "book_page";
-    private static final String FOREIGN_KEY_2 = "_id";
 
 
     MyDatabaseHelper(@Nullable Context context) {
@@ -126,6 +125,16 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             query = "SELECT * FROM " + TABLE_NAME_2;
         }
 
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = null;
+        if(db != null) {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
+    }
+
+    Cursor readNotesByBookId(int book_id) {
+        String query = "SELECT * FROM " + TABLE_NAME_2 + " WHERE " + BOOK_ID_2 + " = " + book_id;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = null;
         if(db != null) {

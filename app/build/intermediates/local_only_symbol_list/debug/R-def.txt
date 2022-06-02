@@ -25,6 +25,7 @@ id authorText
 id author_input
 id author_input2
 id bookInput
+id bookRecyclerView
 id book_author_txt
 id book_id_input
 id book_id_txt
@@ -46,11 +47,15 @@ id mainLayout
 id nav_graph
 id nav_host_fragment_content_update
 id no_data
+id noteRecyclerView
+id note_content_txt
+id note_id_txt
+id note_page_txt
+id note_title_txt
 id pageNumberText
 id page_input
 id pages_input
 id pages_input2
-id recyclerView
 id scanButton
 id scanner_view
 id searchButton
@@ -69,6 +74,7 @@ layout content_update
 layout fragment_first
 layout fragment_second
 layout my_books_row
+layout my_notes_row
 menu my_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
