@@ -18,6 +18,10 @@
             android:label="My Book"
             android:launchMode="singleTask"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".UpdateNoteActivity"
+            android:label="My Note"
+            android:launchMode="singleTask"
+            android:parentActivityName=".UpdateNoteActivity"/>
         <activity
             android:name=".AddBookActivity"
             android:label="Add Book"

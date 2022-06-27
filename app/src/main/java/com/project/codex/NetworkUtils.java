@@ -2,7 +2,6 @@ package com.project.codex;
 
 import android.net.Uri;
 import android.util.Log;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,6 +17,11 @@ public class NetworkUtils {
     private static final String PRINT_TYPE = "printType";
 
 
+    /**
+     * Builds the URL used to query Google Books API.
+     * @param queryString
+     * @return
+     */
     static String getBookInfo(String queryString) {
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;

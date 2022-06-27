@@ -1,126 +1,134 @@
 [
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_ic_delete.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/ic_delete.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable_ic_delete.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/drawable/ic_delete.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_ic_update.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/ic_update.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/menu_my_menu.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/menu/my_menu.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/menu_my_menu.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/menu/my_menu.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_fragment_second.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/fragment_second.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_activity_add_note.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_add_note.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_my_notes_row.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/my_notes_row.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_activity_add_book.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_add_book.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_camera.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/camera.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_fragment_first.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/fragment_first.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/anim_translate_anim.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/anim/translate_anim.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_content_update.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/content_update.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/navigation/nav_graph.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable_ic_empty.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/drawable/ic_empty.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable_camera.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/drawable/camera.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_ic_empty.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/ic_empty.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/ic_add.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/navigation/nav_graph.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_activity_update_book.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_update_book.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/anim_translate_anim.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/anim/translate_anim.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_my_notes_row.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/my_notes_row.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_scanner.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_scanner.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_my_books_row.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/my_books_row.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_update_note.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_update_note.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_content_update.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/content_update.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_fragment_first.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/fragment_first.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_add_book.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_add_book.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_activity_scanner.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/activity_scanner.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/drawable/ic_add.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_my_books_row.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/my_books_row.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_update_book.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_update_book.xml"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/layout_fragment_second.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/layout/fragment_second.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Volumes/projetsPERSO/Codex/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Volumes/projetsPERSO/Codex/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/layout_activity_add_note.xml.flat",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_add_note.xml"
     }
 ]

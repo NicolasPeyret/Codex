@@ -2,7 +2,6 @@ package com.project.codex;
 
 import android.os.AsyncTask;
 import android.widget.TextView;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -10,6 +9,9 @@ public class FetchBook extends AsyncTask<String, Void, String> {
 
     private TextView mAuthorText, mTitleText, mPageNumberText, mImgText;
 
+    /**
+     * onPreExecute method is called before the background task is executed.
+     */
     public FetchBook(TextView mTitleText, TextView mAuthorText, TextView mImgText, TextView mPageNumberText) {
         this.mTitleText = mTitleText;
         this.mAuthorText = mAuthorText;
@@ -17,11 +19,20 @@ public class FetchBook extends AsyncTask<String, Void, String> {
         this.mPageNumberText = mPageNumberText;
     }
 
+    /**
+     * doInBackground method is called when the background task is executed.
+     * @param strings
+     * @return
+     */
     @Override
     protected String doInBackground(String... strings) {
         return NetworkUtils.getBookInfo(strings[0]);
     }
 
+    /**
+     * onPostExecute method is called after the background task is executed.
+     * @param s
+     */
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);

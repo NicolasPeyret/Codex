@@ -3,11 +3,9 @@ package com.project.codex;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
@@ -28,7 +26,6 @@ public class ScannerActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        //Toast.makeText(ScannerActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
                         Intent data = new Intent();
                         data.putExtra("decodedBarcode",  result.getText());
                         // Activity finished return ok, return the data

@@ -12,13 +12,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 
 public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.MyViewHolder> {
@@ -45,6 +42,13 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
         this.book_img = book_img;
         this.book_pages = book_pages;
     }
+
+    /**
+     *  This method is used to create the view holder for the recycler view.
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -53,6 +57,11 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
         return new MyViewHolder(view);
     }
 
+    /**
+     * This method is called by the RecyclerView to display the data at the specified position.
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
@@ -71,6 +80,10 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
 
         holder.book_pages_txt.setText(String.valueOf(book_pages.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Called when a view has been clicked.
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, UpdateBookActivity.class);
@@ -89,12 +102,18 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
         return book_id.size();
     }
 
+    /**
+     * ViewHolder class for the RecyclerView
+     */
     public class MyViewHolder extends RecyclerView.ViewHolder {
-
         TextView book_id_txt, book_title_txt, book_author_txt, book_pages_txt;
         ImageView book_img_txt;
         LinearLayout mainLayout;
-
+        
+        /**
+         * Constructor for the ViewHolder class
+         * @param itemView
+         */
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             book_id_txt = itemView.findViewById(R.id.book_id_txt);

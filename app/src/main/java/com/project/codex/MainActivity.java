@@ -10,39 +10,42 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FloatingActionButton add_button;
-
     MyDatabaseHelper myDB;
     ArrayList<String> book_id, book_title, book_author, book_pages, book_img;
     BookCustomAdapter bookCustomAdapter;
     ImageView empty_imageview;
     TextView no_data;
 
+    /**
+     * onCreate method is called when the activity is created.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         recyclerView = findViewById(R.id.bookRecyclerView);
         add_button = findViewById(R.id.add_button);
         empty_imageview = findViewById(R.id.empty_imageview);
         no_data = findViewById(R.id.no_data);
         add_button.setOnClickListener(new View.OnClickListener() {
+            /**
+             * onClick method is called when the add button is clicked.
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddBookActivity.class);
@@ -55,13 +58,15 @@ public class MainActivity extends AppCompatActivity {
         book_author = new ArrayList<>();
         book_img = new ArrayList<>();
         book_pages = new ArrayList<>();
-
         storeDataInArrays();
         bookCustomAdapter = new BookCustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_img, book_pages);
         recyclerView.setAdapter(bookCustomAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
+    /**
+     * onActivityResult method is called when the activity is created.
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -70,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * storeDataInArrays method is called when the activity is created.
+     */
     void storeDataInArrays() {
         Cursor cursor = myDB.readAllData("books");
         if (cursor.getCount() == 0) {
@@ -88,6 +96,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * onCreateOptionsMenu method is called when the activity is created.
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -95,14 +108,22 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * onOptionsItemSelected method is called when the activity is created.
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.delete_all) {
             confirmDialog();
         }
         return super.onOptionsItemSelected(item);
-    }
+    }  
 
+    /**
+     * confirmDialog method is called when the activity is created.
+     */
     void confirmDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete all ?");

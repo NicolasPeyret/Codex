@@ -2532,6 +2532,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_update
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2667,7 +2668,6 @@ id anticipate
 id arc
 id asConfigured
 id async
-id authorText
 id author_input
 id author_input2
 id auto
@@ -2680,10 +2680,10 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
-id bookInput
 id bookRecyclerView
 id book_author_txt
 id book_id_input
+id book_id_input_2
 id book_id_txt
 id book_img_2
 id book_img_txt
@@ -2700,7 +2700,6 @@ id button_second
 id cache_measures
 id callMeasure
 id cancel_button
-id canvas
 id carryVelocity
 id center
 id center_horizontal
@@ -2730,6 +2729,7 @@ id container
 id content
 id contentPanel
 id content_input
+id content_input_2
 id contiguous
 id continuousVelocity
 id coordinator
@@ -2822,7 +2822,6 @@ id img_input2
 id immediateStop
 id included
 id info
-id instructions
 id invisible
 id inward
 id italic
@@ -2937,8 +2936,8 @@ id outline
 id outward
 id overshoot
 id packed
-id pageNumberText
 id page_input
+id page_input_2
 id pages_input
 id pages_input2
 id parallax
@@ -2979,7 +2978,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchButton
 id search_badge
 id search_bar
 id search_button
@@ -3072,9 +3070,9 @@ id textview_second
 id time
 id title
 id titleDividerNoCustom
-id titleText
 id title_input
 id title_input2
+id title_input_2
 id title_template
 id toggle
 id top
@@ -3202,6 +3200,7 @@ layout activity_add_note
 layout activity_main
 layout activity_scanner
 layout activity_update_book
+layout activity_update_note
 layout content_update
 layout custom_dialog
 layout design_bottom_navigation_item
