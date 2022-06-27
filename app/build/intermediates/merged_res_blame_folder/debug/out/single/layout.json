@@ -8,36 +8,28 @@
         "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/my_books_row.xml"
     },
     {
-        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_note.xml",
-        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_update_note.xml"
-    },
-    {
-        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_notes_row.xml",
-        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/my_notes_row.xml"
-    },
-    {
-        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
-        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/fragment_second.xml"
-    },
-    {
-        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_book.xml",
-        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_add_book.xml"
-    },
-    {
         "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first.xml",
         "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_note.xml",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_update_note.xml"
     },
     {
         "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_book.xml",
         "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_update_book.xml"
     },
     {
-        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_test.xml",
-        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_test.xml"
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_notes_row.xml",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/my_notes_row.xml"
     },
     {
         "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_update.xml",
         "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/content_update.xml"
+    },
+    {
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/fragment_second.xml"
     },
     {
         "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_scanner.xml",
@@ -46,5 +38,9 @@
     {
         "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_note.xml",
         "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_add_note.xml"
+    },
+    {
+        "merged": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_book.xml",
+        "source": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/src/main/res/layout/activity_add_book.xml"
     }
 ]

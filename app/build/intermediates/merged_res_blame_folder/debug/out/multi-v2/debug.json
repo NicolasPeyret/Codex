@@ -832,21 +832,6 @@
             ]
         },
         {
-            "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-w480dp-port-v13_values-w480dp-port-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/f4644d49845b47ba06b9572c54ce16a0/transformed/material-1.5.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,170,226,293,358,413,478",
-                        "endColumns": "58,55,55,66,64,54,64,68",
-                        "endOffsets": "109,165,221,288,353,408,473,542"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-sl_values-sl.arsc.flat",
             "map": [
                 {
@@ -917,6 +902,21 @@
                         "startOffsets": "7773",
                         "endColumns": "100",
                         "endOffsets": "7869"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-w480dp-port-v13_values-w480dp-port-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/f4644d49845b47ba06b9572c54ce16a0/transformed/material-1.5.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,226,293,358,413,478",
+                        "endColumns": "58,55,55,66,64,54,64,68",
+                        "endOffsets": "109,165,221,288,353,408,473,542"
                     }
                 }
             ]
@@ -1239,40 +1239,6 @@
             ]
         },
         {
-            "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-v24_values-v24.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/914116008979e77bc79da871871e9f31/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/f4644d49845b47ba06b9572c54ce16a0/transformed/material-1.5.0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,9,12,15",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,140,239,326,427,626,839,1040",
-                        "endLines": "2,3,4,5,8,11,14,17",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "135,234,321,422,621,834,1035,1250"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7,8,11,14,17",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "347,432,531,618,719,918,1131,1332",
-                        "endLines": "4,5,6,7,10,13,16,19",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-ja_values-ja.arsc.flat",
             "map": [
                 {
@@ -1343,6 +1309,40 @@
                         "startOffsets": "6619,6718",
                         "endColumns": "98,109",
                         "endOffsets": "6713,6823"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nicolaspeyret/Documents/androidstudio/Codex/app/build/intermediates/merged_res/debug/values-v24_values-v24.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/914116008979e77bc79da871871e9f31/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/Users/nicolaspeyret/AndroidStudioProjects/Codex/caches/transforms-3/f4644d49845b47ba06b9572c54ce16a0/transformed/material-1.5.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,9,12,15",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,140,239,326,427,626,839,1040",
+                        "endLines": "2,3,4,5,8,11,14,17",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "135,234,321,422,621,834,1035,1250"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,11,14,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "347,432,531,618,719,918,1131,1332",
+                        "endLines": "4,5,6,7,10,13,16,19",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
                     }
                 }
             ]
