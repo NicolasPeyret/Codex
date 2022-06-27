@@ -97,6 +97,10 @@ public class BookCustomAdapter extends RecyclerView.Adapter<BookCustomAdapter.My
         });
     }
 
+    
+    /** 
+     * @return int
+     */
     @Override
     public int getItemCount() {
         return book_id.size();

@@ -28,17 +28,31 @@ public final class ActivityScannerBinding implements ViewBinding {
     this.scannerView = scannerView;
   }
 
+  
+  /** 
+   * @return FrameLayout
+   */
   @Override
   @NonNull
   public FrameLayout getRoot() {
     return rootView;
   }
 
+  
+  /** 
+   * @param inflater
+   * @return ActivityScannerBinding
+   */
   @NonNull
   public static ActivityScannerBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
+  
+  /** 
+   * @param inflate(
+   * @return ActivityScannerBinding
+   */
   @NonNull
   public static ActivityScannerBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
@@ -49,6 +63,11 @@ public final class ActivityScannerBinding implements ViewBinding {
     return bind(root);
   }
 
+  
+  /** 
+   * @param rootView
+   * @return ActivityScannerBinding
+   */
   @NonNull
   public static ActivityScannerBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.

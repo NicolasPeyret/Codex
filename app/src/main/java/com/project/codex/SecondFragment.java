@@ -14,6 +14,13 @@ public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
 
+    
+    /** 
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return View
+     */
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -25,6 +32,11 @@ public class SecondFragment extends Fragment {
 
     }
 
+    
+    /** 
+     * @param view
+     * @param savedInstanceState
+     */
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 

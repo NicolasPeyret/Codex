@@ -25,6 +25,10 @@ public class UpdateNoteActivity extends AppCompatActivity {
     FloatingActionButton delete_button, update_button;
     String id, title, content, book_id, page;
 
+    
+    /** 
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

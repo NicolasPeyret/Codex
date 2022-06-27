@@ -44,17 +44,31 @@ public final class ActivityMainBinding implements ViewBinding {
     this.noData = noData;
   }
 
+  
+  /** 
+   * @return ConstraintLayout
+   */
   @Override
   @NonNull
   public ConstraintLayout getRoot() {
     return rootView;
   }
 
+  
+  /** 
+   * @param inflater
+   * @return ActivityMainBinding
+   */
   @NonNull
   public static ActivityMainBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
+  
+  /** 
+   * @param inflate(
+   * @return ActivityMainBinding
+   */
   @NonNull
   public static ActivityMainBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
@@ -65,6 +79,11 @@ public final class ActivityMainBinding implements ViewBinding {
     return bind(root);
   }
 
+  
+  /** 
+   * @param rootView
+   * @return ActivityMainBinding
+   */
   @NonNull
   public static ActivityMainBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.

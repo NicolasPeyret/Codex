@@ -37,6 +37,10 @@ public class UpdateBookActivity extends AppCompatActivity {
 
     String id, title, author, pages, img;
 
+    
+    /** 
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,12 @@ public class UpdateBookActivity extends AppCompatActivity {
         onCreateEvent();
     }
 
+    
+    /** 
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -57,6 +67,11 @@ public class UpdateBookActivity extends AppCompatActivity {
         }
     }
 
+    
+    /** 
+     * @param menu
+     * @return boolean
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

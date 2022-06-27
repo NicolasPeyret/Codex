@@ -14,6 +14,10 @@ import com.google.zxing.Result;
 public class ScannerActivity extends AppCompatActivity {
     private CodeScanner mCodeScanner;
 
+    
+    /** 
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -33,17 +33,31 @@ public final class FragmentSecondBinding implements ViewBinding {
     this.textviewSecond = textviewSecond;
   }
 
+  
+  /** 
+   * @return ConstraintLayout
+   */
   @Override
   @NonNull
   public ConstraintLayout getRoot() {
     return rootView;
   }
 
+  
+  /** 
+   * @param inflater
+   * @return FragmentSecondBinding
+   */
   @NonNull
   public static FragmentSecondBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
+  
+  /** 
+   * @param inflate(
+   * @return FragmentSecondBinding
+   */
   @NonNull
   public static FragmentSecondBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
@@ -54,6 +68,11 @@ public final class FragmentSecondBinding implements ViewBinding {
     return bind(root);
   }
 
+  
+  /** 
+   * @param rootView
+   * @return FragmentSecondBinding
+   */
   @NonNull
   public static FragmentSecondBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.

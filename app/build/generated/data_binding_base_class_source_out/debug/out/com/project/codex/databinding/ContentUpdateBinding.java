@@ -20,17 +20,31 @@ public final class ContentUpdateBinding implements ViewBinding {
     this.rootView = rootView;
   }
 
+  
+  /** 
+   * @return ConstraintLayout
+   */
   @Override
   @NonNull
   public ConstraintLayout getRoot() {
     return rootView;
   }
 
+  
+  /** 
+   * @param inflater
+   * @return ContentUpdateBinding
+   */
   @NonNull
   public static ContentUpdateBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
+  
+  /** 
+   * @param inflate(
+   * @return ContentUpdateBinding
+   */
   @NonNull
   public static ContentUpdateBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
@@ -41,6 +55,11 @@ public final class ContentUpdateBinding implements ViewBinding {
     return bind(root);
   }
 
+  
+  /** 
+   * @param rootView
+   * @return ContentUpdateBinding
+   */
   @NonNull
   public static ContentUpdateBinding bind(@NonNull View rootView) {
     if (rootView == null) {
