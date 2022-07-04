@@ -1,6 +1,7 @@
 # Codex Project
 ## Codex
 #####  /!\ This project is a MVP version /!\
+#####  /!\ Doc is in Github Wiki /!\
 
 ### Table of Contents
 1. [BDD Access Feature](#BDDAccessFeature)
